@@ -27,9 +27,9 @@ function init(){
         list_categories.innerHTML = '<li class="active" data-filter="*">All</li>'
         for(var i=0;i<keys.length;i++){
             
-            list_categories.innerHTML += '<li data-filter=".'+keys[i]+'">'+keys[i]+'</li>'
+            // list_categories.innerHTML += '<li data-filter=".'+keys[i]+'">'+keys[i]+'</li>'
             
-            // list_categories.innerHTML += '<li> <a href="#'+keys[i]+'"> '+keys[i]+'</a></li>'
+            list_categories.innerHTML += '<li> <a href="#'+keys[i]+'"> '+keys[i]+'</a></li>'
         }
     
         var list_menu = document.getElementById("menu_list")
@@ -38,7 +38,7 @@ function init(){
             for(var k=0; k<datas[i].length;k++){
                 //  list_menu.innerHTML += '<div class="col-lg-6 menu-item filter-'+keys[i]+'" id="'+keys[i]+'"> <div class="menu-content">'+
                 // '<a href="#">'+datas[i][k].name+'</a><span>'+datas[i][k].price+' TL</span></div> <div class="menu-ingredients">'+datas[i][k].details+'</div></div>'
-                list_menu.innerHTML += '<div class="col-sm-6 col-lg-4 all '+keys[i]+'"> <div class="box"><div> <div class="img-box"><img src="'+datas[i][k].image+'" alt=""> </div>'+
+                list_menu.innerHTML += '<div class="col-sm-6 col-lg-4 all '+keys[i]+'" id="'+keys[i]+'"> <div class="box"><div> <div class="img-box"><img src="'+datas[i][k].image+'" alt=""> </div>'+
                 '<div class="detail-box"><h5>'+datas[i][k].name+'</h5><p>'+datas[i][k].details+'</p></div></div></div></div>'
             }
         }
