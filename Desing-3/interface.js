@@ -29,7 +29,7 @@ function init(){
             
             // list_categories.innerHTML += '<li data-filter=".'+keys[i]+'">'+keys[i]+'</li>'
             
-            list_categories.innerHTML += '<li> <a href="#'+keys[i]+'"> '+keys[i]+'</a></li>'
+            list_categories.innerHTML += '<li  class="active"> <a href="#'+keys[i]+'" style="color:white;"> '+keys[i]+'</a></li>'
         }
     
         var list_menu = document.getElementById("menu_list")
