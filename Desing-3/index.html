@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> USoft QR Menu </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -29,7 +29,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui/material-ui.css">
+  <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
 </head>
 
 <body>
@@ -171,7 +173,7 @@
       </ul>
 
       <div class="filters-content">
-        <div class="row grid">
+        <div class="row grid" id="menu_list">
           <div class="col-sm-6 col-lg-4 all pizza">
             <div class="box">
               <div>
@@ -197,11 +199,17 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Burger
+                    Delicious Burger 
                   </h5>
                   <p>
                     Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
                   </p>
+                  <h5>
+                    $20
+                  </h5>
+                  <div class="options">
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -423,11 +431,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
   <!-- End Google Map -->
-
+<script src="./interface.js"></script>
 </body>
 
 </html>
